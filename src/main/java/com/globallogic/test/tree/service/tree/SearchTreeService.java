@@ -27,6 +27,4 @@ public class SearchTreeService<T extends Comparable<T>> implements SearchService
     public Optional<T> find(Object o) {
         return tree.stream().filter(o::equals).findFirst();
     }
-
-
 }

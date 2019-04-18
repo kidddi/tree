@@ -18,7 +18,7 @@ public class SearchTreeServiceTest {
     private SearchTreeService<Integer> service;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         tree = new Tree<>(2);
         service = new SearchTreeService<>(tree);
         tree.add(4);

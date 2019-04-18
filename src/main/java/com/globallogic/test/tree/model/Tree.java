@@ -11,14 +11,21 @@ import com.google.common.collect.Lists;
 public class Tree<T extends Comparable<T>> {
 
     private Node<T> head;
-    private int count;
 
     public Tree(T value) {
         head = new Node<>(value);
     }
 
+    private Tree(Node<T> node) {
+        head = node;
+    }
+
     public Node<T> get(T value) {
         return get(head, value);
+    }
+
+    public Tree<T> getSubtree(T value) {
+        return new Tree<>(get(head, value));
     }
 
     private Node<T> get(Node<T> node, T value) {
@@ -27,7 +34,6 @@ public class Tree<T extends Comparable<T>> {
 
     public void add(T value) {
         add(head, null, value);
-        count++;
     }
 
     private void add(Node<T> node, Node<T> parent, T value) {
@@ -61,7 +67,6 @@ public class Tree<T extends Comparable<T>> {
         if (foundNode != null) {
             replace(foundNode, null);
         }
-        count--;
     }
 
     private Node<T> find(Node<T> node, T value) {
