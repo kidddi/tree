@@ -1,4 +1,4 @@
-package com.globallogic.test.tree.model;
+package com.globallogic.test.tree.collection;
 
 /**
  * Created by oleksandr.kydiuk on Apr, 2019

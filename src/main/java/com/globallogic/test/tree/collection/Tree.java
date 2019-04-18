@@ -1,4 +1,4 @@
-package com.globallogic.test.tree.model;
+package com.globallogic.test.tree.collection;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -14,6 +14,10 @@ public class Tree<T extends Comparable<T>> {
 
     public Tree(T value) {
         head = new Node<>(value);
+    }
+
+    public Tree() {
+        head = null;
     }
 
     private Tree(Node<T> node) {

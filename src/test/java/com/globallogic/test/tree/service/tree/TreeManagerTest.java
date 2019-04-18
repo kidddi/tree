@@ -1,6 +1,6 @@
 package com.globallogic.test.tree.service.tree;
 
-import com.globallogic.test.tree.model.Tree;
+import com.globallogic.test.tree.collection.Tree;
 
 import org.junit.Before;
 import org.junit.Test;

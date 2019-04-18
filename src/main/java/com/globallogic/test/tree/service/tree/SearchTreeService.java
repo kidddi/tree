@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import com.globallogic.test.tree.model.Tree;
+import com.globallogic.test.tree.collection.Tree;
 import com.globallogic.test.tree.service.SearchService;
 
 /**

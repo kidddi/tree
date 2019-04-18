@@ -2,7 +2,7 @@ package com.globallogic.test.tree.service.tree;
 
 import java.util.Optional;
 
-import com.globallogic.test.tree.model.Tree;
+import com.globallogic.test.tree.collection.Tree;
 
 import org.junit.Before;
 import org.junit.Test;

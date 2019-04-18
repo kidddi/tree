@@ -1,6 +1,6 @@
 package com.globallogic.test.tree;
 
-import com.globallogic.test.tree.model.Tree;
+import com.globallogic.test.tree.collection.Tree;
 import com.globallogic.test.tree.service.tree.SearchTreeService;
 import com.globallogic.test.tree.service.tree.TreeManager;
 
@@ -10,8 +10,10 @@ import com.globallogic.test.tree.service.tree.TreeManager;
 public class Main {
 
     public static void main(String[] args) {
-        Tree<String> tree = new Tree<>("one");
+        Tree<String> tree = new Tree<>();
         SearchTreeService<String> service = new SearchTreeService<>(tree);
+
+//        tree.remove("one");
 
         tree.add("two");
         tree.add("three");

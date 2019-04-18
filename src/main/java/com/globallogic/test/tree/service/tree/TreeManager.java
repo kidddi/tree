@@ -1,6 +1,6 @@
 package com.globallogic.test.tree.service.tree;
 
-import com.globallogic.test.tree.model.Tree;
+import com.globallogic.test.tree.collection.Tree;
 
 /**
  * Created by oleksandr.kydiuk on Apr, 2019
